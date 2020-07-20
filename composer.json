@@ -1,0 +1,44 @@
+{
+  "name": "codemonkeyluffy/laravel-wherehasin",
+  "description": "Laravel ORM whereHasIn",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "orm",
+    "whereHas",
+    "relation"
+  ],
+  "homepage": "https://github.com/CodeMonkeyLuffy",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "CodeMonkeyLuffy",
+      "email": "CodeMonkeyLuffy@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "fzaninotto/faker": "^1.4",
+    "mockery/mockery": "^1.0",
+    "laravel/laravel": ">=5.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "CodeMonkeyLuffy\\Laravel\\Database\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "CodeMonkeyLuffy\\Laravel\\Database\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "CodeMonkeyLuffy\\Laravel\\Database\\WhereHasInServiceProvider"
+      ]
+    }
+  }
+}
